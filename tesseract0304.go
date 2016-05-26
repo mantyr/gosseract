@@ -6,17 +6,17 @@ import "os/exec"
 import "bytes"
 import "io/ioutil"
 
-type tesseract0303 struct {
+type tesseract0304 struct {
 	version        string
 	resultFilePath string
 	commandPath    string
 }
 
-func (t tesseract0303) Version() string {
+func (t tesseract0304) Version() string {
 	return t.version
 }
 
-func (t tesseract0303) Execute(params []string) (res string, e error) {
+func (t tesseract0304) Execute(params []string) (res string, e error) {
 	// command args
 	var args []string
 	// Register source file
@@ -47,7 +47,7 @@ func (t tesseract0303) Execute(params []string) (res string, e error) {
 	return
 }
 
-func (t tesseract0303) readResult() (res string, e error) {
+func (t tesseract0304) readResult() (res string, e error) {
 	fpath := t.resultFilePath + outFILEEXTENSION
 	file, e := os.OpenFile(fpath, 1, 1)
 	if e != nil {
