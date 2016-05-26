@@ -1,6 +1,6 @@
 package gosseract_test
 
-import "github.com/otiai10/gosseract"
+import "github.com/mantyr/gosseract"
 import "testing"
 import "fmt"
 import "image"

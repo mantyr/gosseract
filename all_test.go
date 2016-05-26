@@ -1,6 +1,6 @@
 package gosseract_test
 
-import "github.com/otiai10/gosseract"
+import "github.com/mantyr/gosseract"
 import . "github.com/otiai10/mint"
 import "testing"
 import "os"
